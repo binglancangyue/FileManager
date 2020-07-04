@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="recyclerViewItemMargin">20dp</dimen>
+    <dimen name="recyclerViewItemHeight">60dp</dimen>
+    <dimen name="recyclerViewItemImg">50dp</dimen>
+
+    <dimen name="homeTextSize">18sp</dimen>
+    <dimen name="fileNameTextSize">16sp</dimen>
+    <dimen name="dateTextSize">15sp</dimen>
+
+</resources>

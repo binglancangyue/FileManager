@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    tools:context=".activity.FileManagerMentActivity">
+
+    <LinearLayout
+        android:id="@+id/ctl_back"
+        style="@style/HomeLinearLayoutStyle"
+        app:layout_constraintEnd_toStartOf="@+id/ctl_local"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_icon_back"
+            style="@style/HomeButtonImageViewStyle"
+            android:src="@drawable/litter_back" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            style="@style/HomeButtonTextViewStyle"
+            android:text="@string/btn_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ctl_local"
+        style="@style/HomeTextViewStyle"
+        android:text="@string/btn_local"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_back"
+        app:layout_constraintRight_toLeftOf="@id/ctl_sd_card"
+        app:layout_constraintTop_toTopOf="@id/ctl_back" />
+
+    <TextView
+        android:id="@+id/ctl_sd_card"
+        style="@style/HomeTextViewStyle"
+        android:text="@string/btn_sd"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_local"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ctl_back" />
+
+    <!--<TextView
+        android:visibility="gone"
+        android:id="@+id/ctl_paste"
+        style="@style/HomeTextViewStyle"
+        android:text="@string/btn_paste"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_sd_card"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ctl_back" />-->
+
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/HomeButtonTextViewStyle"
+        android:textSize="@dimen/dateTextSize"
+        app:layout_constraintBottom_toTopOf="@id/viewpager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctl_back" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_path" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ctl_paste"
+                style="@style/HomeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="@string/btn_paste" />
+
+            <TextView
+                android:id="@+id/tv_canal"
+                style="@style/HomeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="@string/btn_canal" />
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    tools:context=".activity.FileManagerMentActivity">
+
+    <LinearLayout
+        android:id="@+id/ctl_back"
+        style="@style/HomeLinearLayoutStyle"
+        app:layout_constraintEnd_toStartOf="@+id/ctl_local"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_icon_back"
+            style="@style/HomeButtonImageViewStyle"
+            android:src="@drawable/litter_back" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            style="@style/HomeButtonTextViewStyle"
+            android:text="@string/btn_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ctl_local"
+        style="@style/HomeLinearLayoutStyle"
+        android:background="@drawable/selector_button_seleted"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_back"
+        app:layout_constraintRight_toLeftOf="@id/ctl_sd_card"
+        app:layout_constraintTop_toTopOf="@id/ctl_back">
+
+        &lt;!&ndash;<ImageView
+            android:id="@+id/iv_icon_local"
+            style="@style/HomeButtonImageViewStyle" />&ndash;&gt;
+
+        <TextView
+            android:id="@+id/tv_local"
+            style="@style/HomeButtonTextViewStyle"
+            android:text="@string/btn_local" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ctl_sd_card"
+        style="@style/HomeLinearLayoutStyle"
+        android:background="@drawable/selector_button_seleted"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_local"
+        app:layout_constraintRight_toLeftOf="@id/ctl_paste"
+        app:layout_constraintTop_toTopOf="@id/ctl_back">
+
+        &lt;!&ndash; <ImageView
+             android:id="@+id/iv_icon_sd_card"
+             style="@style/HomeButtonImageViewStyle" />&ndash;&gt;
+
+        <TextView
+            android:id="@+id/tv_sd_card"
+            style="@style/HomeButtonTextViewStyle"
+            android:text="@string/btn_sd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ctl_paste"
+        style="@style/HomeLinearLayoutStyle"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/ctl_back"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/ctl_sd_card"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ctl_back">
+
+        &lt;!&ndash;<ImageView
+            android:id="@+id/iv_icon_paste"
+            style="@style/HomeButtonImageViewStyle" />&ndash;&gt;
+
+        <TextView
+            android:id="@+id/tv_paste"
+            style="@style/HomeButtonTextViewStyle"
+            android:text="@string/btn_paste" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_path"
+        style="@style/HomeButtonTextViewStyle"
+        app:layout_constraintBottom_toTopOf="@id/viewpager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ctl_back" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_path" />
+
+</android.support.constraint.ConstraintLayout>-->

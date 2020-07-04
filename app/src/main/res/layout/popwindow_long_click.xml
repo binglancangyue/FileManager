@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/LongClickPopWindowStyle"
+            android:text="@string/pop_delete" />
+
+        <View
+            style="@style/DividingLineViewStyle"
+            android:background="@color/color_transparent_w_85" />
+
+        <TextView
+            android:id="@+id/tv_rename"
+            style="@style/LongClickPopWindowStyle"
+            android:text="@string/pop_rename" />
+
+        <View
+            style="@style/DividingLineViewStyle"
+            android:background="@color/color_transparent_w_85" />
+
+        <TextView
+            android:id="@+id/tv_cut"
+            style="@style/LongClickPopWindowStyle"
+            android:text="@string/pop_cut" />
+
+        <View
+            style="@style/DividingLineViewStyle"
+            android:background="@color/color_transparent_w_85" />
+
+        <TextView
+            android:id="@+id/tv_copy"
+            style="@style/LongClickPopWindowStyle"
+            android:text="@string/pop_copy" />
+    </LinearLayout>
+</ScrollView>

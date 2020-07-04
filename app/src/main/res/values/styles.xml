@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="HomeButtonImageViewStyle">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HomeButtonTextViewStyle">
+        <item name="android:textSize">@dimen/homeTextSize</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HomeGuideLineStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HomeConstraintLayoutStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_button_press</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="HomeLinearLayoutStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_button_press</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="HomeTextViewStyle">
+        <item name="android:textSize">@dimen/homeTextSize</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_button_press</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="LongClickPopWindowStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_item_press</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="DividingLineViewStyle">
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="animTranslate">
+        <item name="android:windowEnterAnimation">@anim/translate_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="file_operation_list">
+        <item>@string/pop_delete</item>
+        <item>@string/pop_rename</item>
+        <item>@string/pop_copy</item>
+        <item>@string/pop_cut</item>
+    </string-array>
+</resources>
