@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="horizontal"
-    tools:context=".activity.FileManagerMentActivity">
+    tools:context=".activity.FileManagerActivity">
 
     <LinearLayout
         android:id="@+id/ctl_back"

@@ -12,7 +12,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion '29.0.3'
     defaultConfig {
-        applicationId "com.cywl.launcher.documentmanagement"
+        applicationId "com.cywl.launcher.filemanager"
         minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 27
@@ -23,11 +23,11 @@ android {
     buildTypes {
         release {
             // 开启混淆
-            minifyEnabled true
+            minifyEnabled false
             // Zipalign压缩优化
             zipAlignEnabled true
             // 移除无用的资源文件
-            shrinkResources true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {

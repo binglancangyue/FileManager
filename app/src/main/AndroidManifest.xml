@@ -2,19 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cywl.launcher.documentmanagement">
+    coreApp="true"
+    package="com.cywl.launcher.filemanager"
+    android:sharedUserId="android.uid.system">
 
     <application
-        android:name=".application.MyApplication"
+        android:name="com.cywl.launcher.filemanager.application.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_file"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_file_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.FileManagerMentActivity"
+            android:name="com.cywl.launcher.filemanager.activity.FileManagerActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +26,7 @@
         </activity>
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.cywl.launcher.documentmanagement.fileProvider"
+            android:authorities="com.cywl.launcher.filemanager.fileProvnider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -37,7 +39,7 @@
                android:authorities="com.cywl.launcher.documentmanagement.provider"
                android:exported="true" />-->
         <service
-            android:name=".service.InitDataService"
+            android:name="com.cywl.launcher.filemanager.service.InitDataService"
             android:exported="false" />
 
     </application>

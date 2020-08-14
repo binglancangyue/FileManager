@@ -29,6 +29,8 @@
     <string name="name_cannot_empty">The name cannot be empty</string>
     <string name="name_already_exists">The name already exists.</string>
     <string name="please_input_name">Please enter a name that needs to be modified</string>
-    <string name="same_directory">剪切失败,内容已存在于当前目录</string>
+    <string name="same_directory">Cut failed. The content already exists in the current directory</string>
     <string name="btn_canal">Canal</string>
+    <string name="home_external_path">External storage</string>
+    <string name="home_internal_storage">Internal storage</string>
 </resources>
