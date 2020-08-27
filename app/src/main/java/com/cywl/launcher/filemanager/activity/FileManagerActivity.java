@@ -158,7 +158,7 @@ public class FileManagerActivity extends RxActivity implements View.OnClickListe
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                       requestPermissions(FileManagerActivity.this);
+                        requestPermissions(FileManagerActivity.this);
                         setViewPagerAdapter();
 //                        initFirstLocalPagerData();
 //                        initFirstSDCadrPagerData();
@@ -828,8 +828,9 @@ public class FileManagerActivity extends RxActivity implements View.OnClickListe
             ToastTool.showToast(R.string.exit_app);
             mHandler.sendEmptyMessageDelayed(CustomValue.HANDLE_EXIT_APP, 2000);
         } else {
-            finish();
-//            System.exit(0);
+//            finish();
+//            finishAffinity();
+            System.exit(0);
         }
     }
 

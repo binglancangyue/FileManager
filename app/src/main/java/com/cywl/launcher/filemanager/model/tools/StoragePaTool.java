@@ -36,8 +36,8 @@ public class StoragePaTool {
                 String path = (String) getPath.invoke(storageVolumeElement);
                 boolean removable = (Boolean) isRemovable.invoke(storageVolumeElement);
                 if (isRemoveAble == removable) {
+                    Log.d("test", "getStoragePath:path "+path);
                     return path;
-
                 }
             }
         } catch (ClassNotFoundException
